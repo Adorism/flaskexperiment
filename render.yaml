@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: flaskr
+    autoDeploy: false # optional
+    env: python
+    repo: https://github.com/Adorism/flaskexperiment
+    scaling:
+      minInstances: 1
+      maxInstances: 3
+      targetMemoryPercent: 60 # optional if targetCPUPercent is set
+      targetCPUPercent: 60 # optional if targetMemory is set
+    buildCommand: pip install pyproject.toml
+    startCommand: flask run
+    envVars:
+      - key: FLASK_APP
+        value: flaskr
+      - key: FLASK_ENV
+        value: development
+    
