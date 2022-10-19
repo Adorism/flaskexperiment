@@ -10,7 +10,7 @@ services:
       targetMemoryPercent: 60 # optional if targetCPUPercent is set
       targetCPUPercent: 60 # optional if targetMemory is set
     buildCommand: poetry install
-    startCommand: flask run
+    startCommand: poetry run flask run
     initialDeployHook: flask init-db
     envVars:
       - key: FLASK_APP
