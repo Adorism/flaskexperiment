@@ -1,7 +1,7 @@
 services:
   - type: web
     name: flaskr
-    autoDeploy: false # optional
+    autoDeploy: true # optional
     env: python
     repo: https://github.com/Adorism/flaskexperiment
     scaling:
@@ -17,4 +17,6 @@ services:
         value: flaskr
       - key: FLASK_ENV
         value: development
+      - key: PYTHON_VERSION
+        value: 3.9
     
