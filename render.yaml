@@ -18,5 +18,5 @@ services:
       - key: FLASK_ENV
         value: development
       - key: PYTHON_VERSION
-        value: "3.8.1"
+        value: 3.8.1
     
