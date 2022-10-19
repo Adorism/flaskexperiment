@@ -9,7 +9,7 @@ services:
       maxInstances: 3
       targetMemoryPercent: 60 # optional if targetCPUPercent is set
       targetCPUPercent: 60 # optional if targetMemory is set
-    buildCommand: pip install pyproject.toml
+    buildCommand: poetry install
     startCommand: flask run
     initialDeployHook: flask init-db
     envVars:
