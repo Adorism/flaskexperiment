@@ -10,7 +10,7 @@ services:
       targetMemoryPercent: 60 # optional if targetCPUPercent is set
       targetCPUPercent: 60 # optional if targetMemory is set
     buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn flaskr:app
+    startCommand: gunicorn flaskr:flaskr
     initialDeployHook: flask init-db
     envVars:
       - key: FLASK_APP
