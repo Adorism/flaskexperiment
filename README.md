@@ -48,4 +48,6 @@ Also, someplace, I might need to disambiguate "render_template" https://flask.pa
 
 Because this tutorial is meant to familiarize you with what elements you need to be familiar with in a flask app to deploy it to Render, may also want to take this as boilerplate to further experiment before creating a project from official Flask documentation. Some ideas to try: alter the layout, css, 
 
+Modern Python packages can contain a pyproject.toml file, first introduced in PEP 518 and later expanded in PEP 517, PEP 621 and PEP 660. This file contains build system requirements and information, which are used by pip to build the package. (text from pip.pipa can I adapt) More information on build packages defined this way can be found here. https://pip.pypa.io/en/stable/reference/build-system/pyproject-toml/
+
 Where does the start command go in the flow of this setup?
