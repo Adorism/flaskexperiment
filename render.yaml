@@ -11,6 +11,7 @@ services:
       targetCPUPercent: 60 # optional if targetMemory is set
     buildCommand: pip install pyproject.toml
     startCommand: flask run
+    initialDeployHook: flask init-db
     envVars:
       - key: FLASK_APP
         value: flaskr
