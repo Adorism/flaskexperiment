@@ -1,2 +1,2 @@
 from flask import Flask
-app = Flask(__init__)
+app = Flask(flaskr)
